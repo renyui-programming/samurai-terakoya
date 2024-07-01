@@ -1,0 +1,376 @@
+body{
+  font-family: "Source Sans Pro","Hiragino Kaku Gothic ProN",Meiryo,Arial,sans-serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-pc{
+  text-align: right;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+#nav-pc ul{
+  display: flex;
+  padding-left: 0;
+}
+
+#nav-pc li{
+  margin-left: 20px;
+  list-style: none;
+}
+
+#nav-pc a{
+  text-decoration: none;
+  color: #04414A;
+}
+
+#nav-pc a:hover{
+  text-decoration: underline;
+}
+
+
+#main-visual{
+  position: relative;
+  height: 400px;
+}
+
+#main-message{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #04414A;
+  color: #fff;
+  border-radius: 0 0 150px 0;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  z-index: 11;
+}
+
+#main-message>h1{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 90px 0px 0px 60px;
+}
+
+#main-message>p{
+  font-size: 28px;
+  margin: 0px 0px 0px 60px;
+}
+
+h3{
+  font-size: 21px;
+}
+
+#main-visual>img{
+  max-width: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.index-h2{
+  margin-top: 40px;
+  font-size: 27px;
+}
+
+h2::after{
+  content: url(images/line.png);
+  margin-left: 10px;
+}
+
+#concept{
+  margin: 80px auto;
+
+}
+
+#concept-flex{
+  display: flex;
+  text-align: center;
+}
+
+#concept-flex>div{
+  width: 50%;
+  margin: 20px 20px;
+}
+
+.concept-photo{
+  width: 80%;
+}
+
+#product{
+  background-color: #fafafa;
+  margin: 20px 0px 80px 0px;
+  padding: 10px 40px 0px 40px;
+}
+
+#product>div{
+  margin-top: 40px;
+  display: flex;
+}
+
+#product-left,#product-right{
+  width: 50%;
+  margin: 0px 20px;
+}
+
+#product-right{
+  margin-top: 80px;
+}
+
+#product-left>div,#product-right>div{
+  position: relative;
+  height: 480px;
+}
+
+#product-left>div{
+  margin-right: 20px;
+}
+
+#product-right>div{
+  margin-left: 20px;
+}
+
+.product-photo{
+  width: 100%;
+}
+
+.product-explain{
+  background-color: #fff;
+  position: absolute;
+  left: 0px;
+  top: 250px;
+  bottom: 80px;
+  margin: 0px 50px;
+  padding: 15px 24px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-explain>span{
+  color: #04414A;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.product-explain>h3{
+  margin: 5px 0px;
+}
+
+.product-explain>p{
+  font-size: 13px;
+  margin: 0px;
+}
+
+#company{
+  margin: 80px auto;
+}
+
+#company-table{
+  width: 100%;
+}
+
+.tableheader{
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #04414A;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+}
+
+.tableheader-first{
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #04414A;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+  border-top-color: #04414A;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.cell{
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.cell-first{
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+footer{
+  background-color: #04414A;
+  padding: 80px 80px 30px 80px;
+}
+
+#footer-logo{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#footer-link{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#footer-link>a{
+  text-decoration: none;
+  margin: 10px;
+  color: #fff;
+}
+
+#footer-link>a:hover{
+  text-decoration: underline;
+}
+
+#sns-footer>a{
+  text-align: left;
+  margin: 10px;
+}
+
+#copyright{
+  text-align: right;
+  color: #fff;
+}
+
+/* スマホ用スタイル */
+
+@media screen and (max-width: 767px){
+  #nav-pc li{
+    margin: 0 10px;
+  }
+
+  #main-visual{
+    position: relative;
+    height: 470px;
+    overflow: hidden;
+  }
+
+  #main-message{
+    border-radius: 0 0 476px 0;
+    height: 280px;
+  }
+
+  #main-visual>div>h1{
+    font-size: 28px;
+    margin: 70px 0 0 20px;
+  }
+
+  #main-visual>div>p{
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  #main-visual>img{
+    width: 100%;
+    border-radius: 476px 0 0 0;
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
+
+  h2::after{
+    content: url("images/line.png");
+    margin-left: 10px;
+  }
+
+  h3{
+    font-size: 24px;
+    margin: 10px 0 0 0;
+  }
+
+  #concept{
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+  }
+
+  #concept-flex{
+    flex-direction: column;
+  }
+
+  #concept-flex>div{
+    width: 100%;
+    margin: 0;
+  }
+
+  .concept-photo{
+    width: 100%;
+  }
+
+  #concept h3{
+    padding: 0 20px 0 20px;
+  }
+
+  #product{
+    margin: 0;
+    padding: 10px 0 0;
+  }
+
+  #product>div{
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  #product h2{
+    margin-left: 20px;
+  }
+
+  #product-left,#product-right{
+    width: 100%;
+    margin: 0;
+    padding: 0 20px 0 20px;
+  }
+
+  #company{
+    padding: 0 20px 0 20px;
+  }
+
+  #company h2{
+    margin: 20px 0 20px 0;
+  }
+
+  .tableheader{
+    width: 50px;
+  }
+
+  .cell{
+    padding: 20px;
+  }
+
+  footer{
+    padding: 30px 20px 50px 20px;
+  }
+
+  #footer-link>a{
+  display: block;
+  margin: 0 20px 30px 0;
+  }
+
+  #copyright{
+    font-size: 12px;
+    margin-top: 30px;
+   
+  }
+
+  
+
+}
